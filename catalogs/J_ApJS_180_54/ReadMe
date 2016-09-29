@@ -1,0 +1,191 @@
+J/ApJS/180/54   Globular cluster candidates in ACS Virgo survey. (Jordan+, 2009)
+================================================================================
+The ACS Virgo cluster survey. XVI.
+Selection procedure and catalogs of globular cluster candidates.
+    Jordan A., Peng E.W., Blakeslee J.P., Cote P., Eyheramendy S.,
+    Ferrarese L., Mei S., Tonry J.L., West M.J.
+   <Astrophys. J. Suppl. Ser., 180, 54-66 (2009)>
+   =2009ApJS..180...54J
+================================================================================
+ADC_Keywords: Clusters, galaxy ; Photometry, HST ; Clusters, globular
+Keywords: catalogs - galaxies: elliptical and lenticular, cD
+          galaxies: star clusters - globular clusters: general
+          methods: statistical
+
+Abstract:
+    We present catalogs of globular cluster candidates for the 100
+    galaxies of the Advanced Camera for Surveys Virgo Cluster Survey, a
+    large program to carry out imaging of early-type members of the Virgo
+    Cluster using the Advanced Camera for Surveys (ACS) on the Hubble
+    Space Telescope. We describe the procedure used to select bona fide
+    globular cluster candidates out of the full list of detections based
+    on model-based clustering methods with the use of expected
+    contamination catalogs constructed using blank field observations and
+    which are customized for each galaxy. We also present the catalogs of
+    expected contaminants for each of our target galaxies. For each
+    detected source we measure its position, magnitudes in the F475W
+    (~Sloan g) and F850LP (~Sloan z) bandpasses, and half-light radii by
+    fitting point-spread function convolved King models to the observed
+    light distribution. These measurements are presented for 20375
+    sources, of which 12763 are likely to be globular clusters. Finally,
+    we detail the calculation of the aperture corrections adopted for the
+    globular cluster photometry.
+
+Description:
+    The ACS Virgo Cluster Survey is a large program to image 100
+    early-type galaxies in the Virgo Cluster with the Hubble Space
+    Telescope (HST) Advanced Camera for Surveys (ACS).
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName   Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe         80        .   This file
+table2.dat     62     2400   g-band completeness curves
+table3.dat     62     2400   z-band completeness curves
+table4.dat    142    12763   Photometric and structural catalog of sources
+table5.dat     59   112255   Catalog of expected contaminants
+--------------------------------------------------------------------------------
+
+See also:
+   J/AJ/90/1681 : The Virgo Cluster Catalog (VCC) (Binggeli+, 1985)
+ J/ApJS/153/223 : ACS Virgo Cluster Survey. I (Cote+, 2004)
+ J/ApJS/154/509 : ACS Virgo Cluster Survey. II (Jordan+, 2004)
+  J/ApJ/613/279 : ACS Virgo Cluster Survey. III M87 (Jordan+, 2004)
+ J/ApJS/164/334 : ACS Virgo Cluster Survey. VI (Ferrarese+, 2006)
+ J/ApJS/171/101 : ACS Virgo Cluster Survey. XII (Jordan+, 2007)
+ J/ApJ/655/144  : ACS Virgo Cluster Survey. XIII (Mei+, 2007)
+  J/ApJ/681/197 : ACS Virgo Cluster Survey. XV (Peng+, 2008)
+
+Byte-by-byte Description of file: table2.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  6  F6.4  arcsec  rh        Half-light radius
+   8- 12  F5.2  mag     gmag      HST/ACS F475W band AB magnitude
+  14- 17  F4.2  ---     0.0518    Completeness at background level 0.0518
+  19- 22  F4.2  ---     0.1046    Completeness at background level 0.1046
+  24- 27  F4.2  ---     0.1491    Completeness at background level 0.1491
+  29- 32  F4.2  ---     0.2359    Completeness at background level 0.2359
+  34- 37  F4.2  ---     0.4023    Completeness at background level 0.4023
+  39- 42  F4.2  ---     0.7175    Completeness at background level 0.7175
+  44- 47  F4.2  ---     1.2535    Completeness at background level 1.2535
+  49- 52  F4.2  ---     2.1876    Completeness at background level 2.1876
+  54- 57  F4.2  ---     3.6955    Completeness at background level 3.6955
+  59- 62  F4.2  ---     6.0713    Completeness at background level 6.0713
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table3.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  6  F6.4  arcsec  rh        Half-light radius
+   8- 12  F5.2  mag     zmag      HST/ACS F850LP band AB magnitude
+  14- 17  F4.2  ---     0.0326    Completeness at background level 0.0326
+  19- 22  F4.2  ---     0.0917    Completeness at background level 0.0917
+  24- 27  F4.2  ---     0.1403    Completeness at background level 0.1403
+  29- 32  F4.2  ---     0.2354    Completeness at background level 0.2354
+  34- 37  F4.2  ---     0.4044    Completeness at background level 0.4044
+  39- 42  F4.2  ---     0.7457    Completeness at background level 0.7457
+  44- 47  F4.2  ---     1.3262    Completeness at background level 1.3262
+  49- 52  F4.2  ---     2.2897    Completeness at background level 2.2897
+  54- 57  F4.2  ---     4.3344    Completeness at background level 4.3344
+  59- 62  F4.2  ---     7.6519    Completeness at background level 7.6519
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table4.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units    Label   Explanations
+--------------------------------------------------------------------------------
+   1-  4  I4    ---      VCC     Virgo Cluster Catalog number (1)
+   6- 16  F11.7 deg      RAdeg   Right Ascension in decimal degrees (J2000) (2)
+  18- 27  F10.7 deg      DEdeg   Declination in decimal degrees (J2000) (2)
+  29- 35  F7.3  arcsec   GDist   Galactocentric distance
+  37- 42  F6.3  mag      zmag    Model HST/ACS F850LP band magnitude (3)
+  44- 48  F5.3  mag    e_zmag    Uncertainty in zmag
+  50- 55  F6.3  mag      zamag   Average HST/ACS F850LP band correction aperture
+                                  magnitude (4)
+  57- 61  F5.3  mag    e_zamag   Uncertainty in zamag
+  63- 68  F6.3  mag      gmag    Model HST/ACS F475W band magnitude (3)
+  70- 74  F5.3  mag    e_gmag    Uncertainty in gmag
+  76- 81  F6.3  mag      gamag   Average HST/ACS F475W band correction aperture
+                                  magnitude (4)
+  83- 87  F5.3  mag    e_gamag   Uncertainty in gamag
+  89- 94  F6.4  arcsec   rhz     Best-fit HST/ACS F850LP band half-light radius
+  96-101  F6.4  arcsec e_rhz     Uncertainty in rhz
+ 103-108  F6.4  arcsec   rhg     Best-fit HST/ACS F475W band half-light radius
+ 110-115  F6.4  arcsec e_rhg     Uncertainty in rhg
+ 117-120  F4.2  ---      pGC     Probability source is a Globular Cluster (5)
+ 122-126  F5.3  mag      E(B-V)  Foreground E(B-V) assumed (6)
+ 128-134  F7.4  ct/s     bz      Background HST/ACS F475W band counts
+ 136-142  F7.4  ct/s     bg      Background HST/ACS F850LP band counts
+--------------------------------------------------------------------------------
+Note (1): Galaxy ID in the Virgo Cluster Catalogue (Binggeli et al.,
+          1985, Cat. <J/AJ/90/1681>, <VCC NNNN> in Simbad).
+          This table present the structural and photometrical catalog of
+          all ACSVCS sources that satisfy the selection criteria presented in
+          Section 2.6 in Jordan et al., 2004, Cat. <J/ApJS/154/509> (Paper II).
+          To select a sample of bona-fide GCs the sources should be restricted
+          to those having pGC>=0.5.
+Note (2): Sources identified as <[JPB2009] DDD.ddddddd+DD.ddddddd> in Simbad.
+Note (3): Obtained from the best-fits PSF convolved King model and an aperture
+          correction as per equation 9 (Section 3.1).
+Note (4): Inferred from a 0.2" aperture and an aperture correction as per
+          equation 10 (Section 3.2).
+Note (5): According to the maximum-likelihood estimate of our asumed mixture
+          model (see Section 7).
+Note (6): E(B-V) taken from the DIRBE maps of Schlegel et al.,
+          (1998ApJ...500..525S). The corrections for foreground reddening were
+          taken to be A_g_=3.634E(B-V) and A_z_=1.485E(B-V) in the g- and
+          z-bands respectively (see Jordan et al., 2004, Cat. <J/ApJS/154/509>).
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table5.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label    Explanations
+--------------------------------------------------------------------------------
+   1-  4  I4    ---     VCC      Virgo Cluster Catalog number (1)
+   6- 12  F7.3  arcsec  GDist    Galactocentric distance
+  14- 19  F6.3  mag     zmag     Model HST/ACS F850LP band magnitude (2)
+  21- 26  F6.3  mag     zamag    Average HST/ACS F475W band correction aperture
+                                 magnitude (3)
+  28- 33  F6.3  mag     gmag     Model HST/ACS F850LP band magnitude (2)
+  35- 40  F6.3  mag     gamag    Average HST/ACS F850LP band correction aperture
+                                 magnitude (3)
+  42- 47  F6.4  arcsec  rhz      Best-fit HST/ACS F850LP band half-light radius
+  49- 54  F6.4  arcsec  rhg      Best-fit HST/ACS F475W band half-light radius
+  56- 59  F4.2  ---     pGC      Probability source is a Globular Cluster (4)
+--------------------------------------------------------------------------------
+Note (1): This table presents the expected contaminants in 17 control fields
+          customized to each galaxy. It can be used to infer 17 times the
+          expected contamination in any given GC sample.
+Note (2): Obtained from the best-fits PSF convolved King model and an aperture
+          correction as per equation 9.
+Note (3): Inferred from a 0.2" aperture and an aperture correction as per
+          equation 10.
+Note (4): According to the maximum-likelihood estimate of our asumed mixture
+          model (see Section 7).
+--------------------------------------------------------------------------------
+
+History:
+    From electronic version of the journal
+
+References:
+   Cote et al.,      Paper I     2004ApJS..153..223C, Cat. J/ApJS/153/223
+   Jordan et al. ,   Paper II    2004ApJS..154..509J, Cat. J/ApJS/154/509
+   Jordan et al.,    Paper III   2004ApJ...613..279J, Cat. J/ApJ/613/279
+   Mei et al.,       Paper IV    2005ApJS..156..113M
+   Mei et al.,       Paper V     2005ApJ...625..121M
+   Ferrarese et al., Paper VI    2006ApJS..164..334F, Cat. J/ApJS/164/334
+   Hasegan et al.,   Paper VII   2005ApJ...627..203H
+   Cote et al.,      Paper VIII  2006ApJS..165...57C
+   Peng et al.,      Paper IX    2006ApJ...639...95P
+   Jordan et al.,    Paper X     2005ApJ...634.1002J
+   Peng et al.,      Paper XI    2006ApJ...639..838P
+   Jordan et al.,    Paper XII   2007ApJS..171..101J, Cat. J/ApJS/171/101
+   Mei et al.,       Paper XIII  2007ApJ...655..144M, Cat. J/ApJ/655/144
+   Mieske et al.,    Paper XIV   2006ApJ...653..193M
+   Peng et al.,      Paper XV    2008ApJ...681..197P, Cat. J/ApJ/681/197
+
+================================================================================
+(End)                 Greg Schwarz [AAS], Emmanuelle Perret [CDS]    06-Oct-2009

@@ -1,0 +1,7 @@
+data vanderbekeMWGC_CTIOstruct.dat
+read name_s 1.s
+data vanderbekeMWGC_CTIOphot.dat
+read name_p 1.s
+print {name_p name_s}
+ !pwd
+quit

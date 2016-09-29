@@ -1,0 +1,132 @@
+J/A+AS/134/59    The central Fornax Cluster. I. Galaxy photometry (Hilker+ 1999)
+================================================================================
+The central region of the Fornax cluster. I. A catalog and photometric
+properties of galaxies in selected CCD fields
+       Hilker M., Kissler-Patig M., Richtler T., Infante L., Quintana H.
+      <Astron. Astrophys. Suppl. Ser. 134, 59 (1999)>
+      =1999A&AS..134...59H      (SIMBAD/NED BibCode)
+================================================================================
+ADC_Keywords: Clusters, galaxy ; Galaxies, photometry
+Keywords: galaxies: clusters: individual: Fornax cluster -
+          galaxies: fundamental parameters - galaxies: photometry - catalogs -
+          galaxies: dwarf
+
+Description:
+    In this paper, a photometric catalog is presented of V and I
+    photometry of galaxies in the central regions of the Fornax galaxy
+    cluster. Our 11 CCD fields cover 0.17 square degrees in total. The
+    limiting surface brightness is around 24mag/arcsec^2^, similar to that
+    of Ferguson's (1989, Cat. <VII/180>) catalog, whereas our limiting
+    total magnitude is around V=22mag, about two magnitudes fainter. The
+    photometric properties of more than 870 objects are presented as a
+    catalog (Appendix A). The properties and fit parameters of the surface
+    brightness profiles for a sub-sample are presented in a second catalog
+    (Appendix B). Four new dwarf galaxies are added to Ferguson's catalog.
+    However, we confirm that the dwarf galaxies in Fornax follow a similar
+    surface brightness -- magnitude relation as the Local Group dwarfs.
+    They also follow the color (metallicity) -- magnitude relation seen in
+    other galaxy clusters. A formerly suspected excess of dwarf galaxies
+    surrounding the central giant cD galaxy NGC 1399 can be explained by
+    the superposition of a background cluster at z=0.11 (Hilker et al.
+    1998, Cat. <J/A+AS/134/75>, Paper II in this series).
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName    Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe          80        .   This file
+appendxa.dat    96      873   Photometric catalog
+appendxb.dat   119      192   Catalog of profile fit parameters
+--------------------------------------------------------------------------------
+
+See also:
+       VII/180 : Galaxies in 3.5 degs of Fornax cluster (Ferguson+ 1989)
+ J/A+AS/134/75 : Paper II. Galaxy spectroscopy (Hilker+ 1999)
+
+Byte-by-byte Description of file: appendxa.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units       Label  Explanations
+--------------------------------------------------------------------------------
+   1-  9  A9    ---         CGF    Catalog name of the object (1)
+      10  A1    ---       n_CGF    [*] *: objects that are also listed in
+                                           appendb.dat file
+      13  I1    h           RAh    Right ascension (J2000)
+  15- 16  I2    min         RAm    Right ascension (J2000)
+  18- 22  F5.2  s           RAs    Right ascension (J2000)
+      25  A1    ---         DE-    Declination sign
+  26- 27  I2    deg         DEd    Declination (J2000)
+  29- 30  I2    arcmin      DEm    Declination (J2000)
+  32- 35  F4.1  arcsec      DEs    Declination (J2000)
+  38- 42  F5.2  mag         Vtot   Total V apparent magnitude
+      44  A1    ---         nbo    [n] Neighbouring object (2)
+  47- 51  F5.2  mag/arcsec2 sbVp   V peak surface brightness
+  54- 58  F5.2  mag         V-I    ? (V-I) color within 3 arcsec aperture
+  61- 64  F4.2  ---         ell    ? Ellipticity, ell = 1 - b/a
+  67- 71  F5.1  deg         PA     [-90/90] Position angle of the major axis (3)
+  74- 77  F4.1  arcsec      aphot  Size of the major axis
+  80- 83  F4.1  arcsec      d26    ? Size of major axis at sbV = 26 mag/arcsec2
+  86- 89  F4.1  arcsec      aeff   ? Effective semi-major axis
+  92- 96  F5.2  mag/arcsec2 sbVeff V effective surface brightness
+--------------------------------------------------------------------------------
+Note (1): 
+    The catalog names are prefixed by the acronym CGF (Catalog of
+    Galaxies in Fornax) followed by a sequence number of the field and the
+    sequence number of the galaxy in this field (ordered with decreasing
+    magnitude). In the catalog the galaxies are ordered by increasing
+    right ascension.
+
+Note (2): 
+    The letter "n" indicates that a neighbouring object is present within
+    two isophotal radii.
+
+Note (3): 
+    0 degree is in east direction, positive angles towards the south,
+    and negative angles towards the north direction
+
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: appendxb.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units       Label  Explanations
+--------------------------------------------------------------------------------
+   1-  9  A9    ---         CGF    Catalog name of the object (see Appendix A)
+      12  I1    h           RAh    Right ascension (J2000)
+  14- 15  I2    min         RAm    Right ascension (J2000)
+  17- 21  F5.2  s           RAs    Right ascension (J2000)
+      24  A1    ---         DE-    Declination sign
+  25- 26  I2    deg         DEd    Declination (J2000)
+  28- 29  I2    arcmin      DEm    Declination (J2000)
+  31- 34  F4.1  arcsec      DEs    Declination (J2000)
+  37- 44  A8    ---         MType  Morphological Type
+  47- 51  F5.2  mag         Vtot   Total V apparent magnitude
+      53  A1    ---         nbo    Neighboring object (see Appendix A)
+  56- 58  F3.1  arcsec      rcap   Apparent core radius (1)
+  61- 63  F3.1  arcsec      rccor  ? Corrected core radius (using
+                                      Kormendy 1985ApJ...295...73K)
+  66- 70  F5.2  mag/arcsec2 sbVcor ? Corrected central surface brightness (sb)
+  73- 76  F4.2  ---         nsers  ? Exponent of Sersic (1968, Atlas de galaxias
+                                      australes) profile fit
+  79- 83  F5.2  mag/arcsec2 sbVser ? Central surface brightness of Sersic fit
+  86- 89  F4.2  arcsec      r0sers ? Scale length of Sersic profile fit
+  92- 96  F5.2  mag/arcsec2 sbVdV  ? Central sb of de Vaucouleurs profile fit
+  99-103  F5.2  arcsec      refdV  ? Effective radius of de Vaucouleurs profile
+ 106-110  F5.2  mag/arcsec2 sbVexp ? Central sb of exponential profile fit
+ 112-116  F5.2  arcsec      alpha  ? Scale length of exponential profile fit
+     119  A1    ---         flag   [bdne] Exponential profile fit flag (2)
+--------------------------------------------------------------------------------
+Note (1): 
+    Radius where the apparent central surface intensity has its half
+    value
+
+Note (2): the meaning of the flag is:
+       b: bulge is present
+       d: light deficiency in the center
+       n: nucleus present
+       e: exponential law at all radii
+--------------------------------------------------------------------------------
+
+References:
+  Sersic J.-L., 1968, Atlas de galaxias australes, Observatorio Astronomica,
+    Cordoba
+================================================================================
+(End)      M. Hilker [Pontifica Universidad Catolica, Santiago]      30-Jun-1998

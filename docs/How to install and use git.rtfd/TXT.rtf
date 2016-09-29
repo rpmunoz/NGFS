@@ -1,0 +1,193 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue233;\red211\green211\blue211;\red38\green38\blue38;
+}
+\margl1440\margr1440\vieww21100\viewh9820\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\b\fs28 \cf0 \expnd0\expndtw0\kerning0
+Las siguientes instrucciones son para instalar git y configura el respositorio de Github en Ubuntu 14.04
+\b0 \expnd0\expndtw0\kerning0
+\
+\
+1.- Install git using apt. Read the git simple guide\'a0{\field{\*\fldinst{HYPERLINK "http://rogerdudler.github.io/git-guide/"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 http://rogerdudler.github.io/git-guide/}} \
+\
+sudo apt-get install git \
+\
+2.- Download and install hub, a command-line wrapper for git that makes you better at GitHub. Read the guide {\field{\*\fldinst{HYPERLINK "https://hub.github.com/"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 https://hub.github.com}} \
+Visit the link and download the corresponding compiled binary{\field{\*\fldinst{HYPERLINK "https://github.com/github/hub/releases"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 \'a0https://github.com/github/hub/releases}} \
+\
+wget\'a0{\field{\*\fldinst{HYPERLINK "https://github.com/github/hub/releases/download/v2.2.3/hub-linux-amd64-2.2.3.tgz"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 https://github.com/github/hub/releases/download/v2.2.3/hub-linux-amd64-2.2.3.tgz}} \
+tar xzvf\'a0hub-linux-amd64-2.2.3.tgz \
+cd\'a0hub-linux-amd64-2.2.3 \
+sudo ./install \
+\
+3.- Add a line to .tcshrc to alias hub as git. \
+\
+vi ~/.tcshrc \
+\
+
+\itap1\trowd \taflags5 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth15240\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt200 \clpadl200 \clpadb200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+alias git 'hub' \cell \lastrow\row
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\
+Close the terminal and open it again. Run the command git -h to verify that you are using hub. You should see the message "These GitHub commands are provided by hub:" \
+\
+4.- Generate a public ssh key and add it to Github \
+\
+ssh-keygen -t rsa -b 4096 -C "YOUR_EMAIL" \
+\
+When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location. \
+At the prompt, type a secure passphrase. For more information, see "Working with SSH key passphrases". \
+\
+5.- Add key to ssh-agent \
+\
+eval `ssh-agent -c` \
+ssh-add ~/.ssh/id_rsa \
+\
+6.- Print the public SSH key, copy it and add it to your GitHub account \
+\
+cat ~/.ssh/id_rsa.pub \
+\
+COPY THE KEY\'a0 \
+\
+PASTE THE KEY USING THE FOLLOWING INSTRUCTIONS \
+\pard\tx566\pardeftab720\sa300
+
+\f1\fs30 \cf4 \expnd0\expndtw0\kerning0
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 2.tiff \width12000 \height9740
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\fs30 \cf4 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f0\fs28 \cf0 \expnd0\expndtw0\kerning0
+\
+7.- Configure git for using VIM, storing the credentials and setting up your username and email \
+\
+git config --global core.editor "vim" \
+git config credential.helper store \
+git config --global push.default current \
+git config --global user.name "YOUR NAME" \
+git config --global user.email "YOUR EMAIL" \
+\
+8.- Create\'a0.gitignore_global to avoid uploading temporary and compiled binaries to Github \
+\
+cd ~ \
+touch .gitignore_global \
+git config --global core.excludesfile ~/.gitignore_global \
+vi .gitignore_global \
+\
+
+\itap1\trowd \taflags5 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth15240\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt200 \clpadl200 \clpadb200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+# OS generated files \
+.DS_Store \
+.DS_Store? \
+._* \
+.Spotlight-V100 \
+.Trashes \
+ehthumbs.db \
+Thumbs.db \
+\
+# Vim \
+*.swp \
+*.swo \
+\
+# Compiled Object files \
+*.slo \
+*.lo \
+*.o \
+*.obj \
+\
+# Precompiled Headers \
+*.gch \
+*.pch \
+\
+# Compiled Dynamic libraries \
+*.so \
+*.dylib \
+*.dll \
+\
+# Fortran module files \
+*.mod \
+\
+# Compiled Static libraries \
+*.lai \
+*.la \
+*.a \
+*.lib \
+\
+# Executables \
+*.exe \
+*.out \
+*.app \
+\
+# Videos \
+*.mp4 \
+*.avi \
+*.mov \
+\
+# Python \
+.ipynb* \cell \lastrow\row
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\
+\
+9.- Visit the the repository using the link {\field{\*\fldinst{HYPERLINK "http://github.com/rpmunoz/NGFS"}}{\fldrslt http://github.com/rpmunoz/NGFS}}\'a0and click the the button Fork in the top-right of the window \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic 57C9BEF7-1733-4282-9498-EF7C6A494447.png \width7220 \height940
+}¬}
+\f0\fs28 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \
+10.- Open the terminal and execute the following commands to clone the forked repository. The remote/origin will point to your own repository and the remote/upstream will point to the master repository \
+\
+git clone YOUR_GITHUB_USERNAME/NGFS \
+cd video_analytics \
+git remote add upstream \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 https://github.com/rpmunoz/NGFS.git\cf0 \expnd0\expndtw0\kerning0
+\ulnone \
+git fetch -all \
+git remote -v \
+\
+11.- Let\'92s say you want to enhance the code and develop something new. The best way is to create a branch from master and develop the new code on that branch. Let\'92s call our branch test \
+\
+git checkout -b test \
+\
+12.- Modify and add some code to the new branch. Track the new files and commit the changes \
+\
+git add -A \
+git commit -m "TYPE A LOG MESSAGE" \
+\
+13.- Push the changes to\'a0to your own fork of the project and the pull request for the topic branch you've just pushed \
+\
+git push \
+git pull-request \
+\
+14.- Keep the master branch updated \
+\
+git checkout master \
+git pull \
+\
+\
+\
+}
